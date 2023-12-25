@@ -241,7 +241,7 @@ border-radius: 30px;
 .intro img{
   width: 50%;
   height: 100%;
-  border-radius: 100%;
+  border-radius: 10%; 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -339,7 +339,7 @@ p{
   margin-top: 100px;
   font-size: 2.5rem;
  padding-left: 10%;
-  width: 60%;
+  width: 70%;
   border-radius: 30px;
   font-weight: 900;
   color: #000000;
@@ -678,8 +678,8 @@ div h3{
   .intro img{
     width: 80%;
     height: 100%;
-    margin-left: 60px;
-    border-radius: 100%;
+    margin-left: 50px;
+    border-radius: 10%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
