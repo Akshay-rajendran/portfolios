@@ -740,7 +740,7 @@ div h3{
 /* }  */
 
   .centernav {
-    width: 200px;
+    width: 100%;
     height: 300px;
     position: absolute;
     display: flex;
@@ -753,7 +753,7 @@ div h3{
     border-radius: 15px;
     background-color: rgb(255, 255, 255,0.1);
     backdrop-filter: blur(15px);
-    transform: translateX(100vh);
+    transform: translateY(-100vh);
  
 
   }
