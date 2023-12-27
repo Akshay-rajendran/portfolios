@@ -100,7 +100,7 @@ function App() {
                 </div>
                 <div className="flip-card-back">
                   <img className="title extra" src="/job.png" alt="" />
-                  <a href="https://job-portal-undd.onrender.com/">Live Preview</a>
+                  <a href="https://job-example-1.onrender.com/">Live Preview</a>
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@ function App() {
                 </div>
                 <div className="flip-card-back">
                   <img className="title extra" src="/task.png" alt="" />
-                  <a href="https://golden-valkyrie-c6bb09.netlify.app/">Live Preview</a>
+                  <a href="https://658c64032e9b3d0e73db9101--golden-valkyrie-c6bb09.netlify.app/">Live Preview</a>
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@ function App() {
                 </div>
                 <div className="flip-card-back">
                   <img className="title extra" src="/clone.png" alt="" />
-                  <a href="https://dynamic-gelato-2e930f.netlify.app/">Live Preview</a>
+                  <a href="https://658c72cdb5ce801e2cee52d7--willowy-ganache-28c5d3.netlify.app/">Live Preview</a>
                 </div>
               </div>
             </div>
