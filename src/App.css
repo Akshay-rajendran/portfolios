@@ -23,6 +23,7 @@ body {
   );
   /* background: linear-gradient(to right top, #add8e6, #ffffff) 0 0 / 20% 20%; */
 }
+
 .a:hover {
   color: #009999;
 }
@@ -80,9 +81,11 @@ body {
 
 .centernav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  width: 40%;
+  /* border: 1px solid red; */
+  width: 50%;
+  gap: 20px;
 }
 
 ul,
@@ -153,9 +156,10 @@ ol {
 }
 
 .loader-inner {
-  width: 48px;
+  width: 50px;
   height: 48px;
   margin: auto;
+  border-radius: 100%;
   position: relative;
 }
 
@@ -254,7 +258,7 @@ ol {
 
 .aro {
   animation-duration: 2s;
-  animation-name: slidein;
+  animation-name: none;
   animation-iteration-count: 1;
   /* filter: grayscale(100%); */
   /* animation-direction: normal;  */
@@ -274,6 +278,8 @@ ol {
     width: 45%; /* Set the final width */
   }
 }
+
+
 
 .intro div .heading {
   font-size: 2rem;
@@ -502,6 +508,48 @@ p {
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+/* theme */
+.checkbox-wrapper-25 input[type="checkbox"] {
+  background-image: -webkit-linear-gradient(hsla(0,0%,0%,.1), hsla(0,0%,100%,.1)),
+                      -webkit-linear-gradient(left, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%);
+  background-size: 100% 100%, 200% 100%;
+  background-position: 0 0, 15px 0;
+  border-radius: 25px;
+  box-shadow: inset 0 1px 4px hsla(0,0%,0%,.5),
+                inset 0 0 10px hsla(0,0%,0%,.5),
+                0 0 0 1px hsla(0,0%,0%,.1),
+                0 -1px 2px 2px hsla(0,0%,0%,.25),
+                0 2px 2px 2px hsla(0,0%,100%,.75);
+  cursor: pointer;
+  height: 25px;
+  padding-right: 25px;
+  /* border: 1px solid ; */
+  width: 60px;
+  -webkit-appearance: none;
+  -webkit-transition: .25s;
+}
+
+.checkbox-wrapper-25 input[type="checkbox"]:after {
+  background-color: #eee;
+  background-image: -webkit-linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+  border-radius: 25px;
+  box-shadow: inset 0 1px 1px 1px hsla(0,0%,100%,1),
+                inset 0 -1px 1px 1px hsla(0,0%,0%,.25),
+                0 1px 3px 1px hsla(0,0%,0%,.5),
+                0 0 2px hsla(0,0%,0%,.25);
+  content: '';
+  display: block;
+  height: 25px;
+  border: 1px solid;
+  width: 35px;
+}
+
+.checkbox-wrapper-25 input[type="checkbox"]:checked {
+  background-position: 0 0, 35px 0;
+  padding-left: 25px;
+  padding-right: 0;
+}
+/* theme */
 
 .wrapper .tooltip {
   position: absolute;
@@ -572,6 +620,44 @@ p {
 span a {
   color: #000000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 952px) {
   .aboutitem {
     width: 100%;
@@ -599,6 +685,12 @@ span a {
   .navwords {
     display: none;
   }
+  .nav {
+    animation: none
+  }
+  
+ 
+  /* card */
   .title {
     font-size: 1.5em;
     font-weight: 900;
@@ -646,7 +738,7 @@ span a {
       rgb(243, 243, 243) 0px 18px 36px -18px inset;
     border-radius: 20px;
   }
-
+/* card */
   .centernav .navwords {
     display: contents;
     color: white;
@@ -719,56 +811,36 @@ span a {
 
   .aro {
     animation-duration: 2s;
-    animation-name: slidein;
+    animation-name: none;
     animation-iteration-count: 1;
     animation-direction: normal; /* Change to 'normal' */
   }
+ul{
+  padding-left: 0px;
+}
+  
+ul li{
+  /* border: 1px solid white; */
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
 
-  @keyframes slidein {
-    from {
-      margin-left: -100%;
-      width: 0; /* Set the initial width to 0 */
-    }
-
-    to {
-      margin-left: 0%;
-      width: 80%; /* Set the final width */
-    }
-  }
-
-  /* .intropara {
-  animation-duration: 2s;
-  animation-name: slideleft;
-  animation-iteration-count: 1;
-  animation-direction: normal; /* Change to 'normal' */
-
-  /* } */
-
-  /* @keyframes slideleft {
-  from {
-    margin-left: 100%;
-    width: 0; /* Set the initial width to 0 */
-  /* }
-
-  to {
-    margin-left: 0%;
-    width: 100%; /* Set the final width */
-  /* } */
-  /* }  */
 
   .centernav {
-    width: 100%;
-    height: 300px;
+    width: 80%;
+    height: 350px;
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     right: 30px;
     top: 90px;
     transition: 1s;
+     border: 1px solid white;
     border-radius: 15px;
-    background-color: rgb(255, 255, 255, 0.1);
+    background-color: rgb(0, 0, 0);
     backdrop-filter: blur(15px);
     transform: translateY(-100vh);
   }

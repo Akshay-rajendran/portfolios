@@ -8,11 +8,14 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 import FacebookTwoToneIcon from "@mui/icons-material/FacebookTwoTone";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { createContext } from "react";
+
 
 function App() {
   const [count, setCount] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
+  
   const navref = useRef();
 
   const handleToggle = () => {
@@ -28,6 +31,7 @@ function App() {
 
     fakeAsyncOperation();
   }, []);
+
   const styles = {
     largeIcon: {
       width: 60,
@@ -67,6 +71,7 @@ function App() {
                     <a href="" className="navwords a">
                       Home
                     </a>
+                    
                   </li>
                   <li>
                     <a href="#about" className="navwords a">
@@ -74,14 +79,19 @@ function App() {
                     </a>
                   </li>
                   <li>
-                    <a href="" className="navwords c">
+                    <a href="" className="navwords a">
                       Courses
                     </a>
                   </li>
                   <li>
-                    <a href="#technology" className="navwords b">
+                    <a href="#technology c" className="navwords b">
                       Technology
                     </a>
+                  </li>
+                  <li >
+                    <div className="checkbox-wrapper-25">
+                      <input type="checkbox" />
+                    </div>
                   </li>
                 </ul>
               </div>
