@@ -88,11 +88,7 @@ function App() {
                       Technology
                     </a>
                   </li>
-                  <li >
-                    <div className="checkbox-wrapper-25">
-                      <input type="checkbox" />
-                    </div>
-                  </li>
+                  
                 </ul>
               </div>
             </div>
